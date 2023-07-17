@@ -9,3 +9,5 @@ provider:
 functions:
   hello:
     handler: src/handler.generateRandomNumber
+    timeout: 60 # Seconds
+    memorySize: 128 # MB
