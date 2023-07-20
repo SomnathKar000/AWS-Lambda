@@ -1,6 +1,6 @@
 "use strict";
 
-export const generateRandomNumber = (event) => {
+export const generateRandomNumber = () => {
   const randomNumber = Math.floor(Math.random() * 100);
   console.log("This random number is: " + randomNumber);
   return {
@@ -9,7 +9,6 @@ export const generateRandomNumber = (event) => {
       {
         message: "The random number is gemented successfully",
         number: randomNumber,
-        input: event,
       },
       null,
       2
