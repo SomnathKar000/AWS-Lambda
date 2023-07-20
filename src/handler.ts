@@ -5,10 +5,14 @@ export const generateRandomNumber = (event) => {
   console.log("This random number is: " + randomNumber);
   return {
     statusCode: 200,
-    body: JSON.stringify({
-      message: "The random number is gemented successfully",
-      number: randomNumber,
-      input: event,
-    }),
+    body: JSON.stringify(
+      {
+        message: "The random number is gemented successfully",
+        number: randomNumber,
+        input: event,
+      },
+      null,
+      2
+    ),
   };
 };
