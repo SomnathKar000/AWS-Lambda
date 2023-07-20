@@ -1,6 +1,19 @@
-# package directories
-node_modules
-jspm_packages
+# Ignore node_modules directory
+node_modules/
 
-# Serverless directories
-.serverless
+# Ignore the compiled JavaScript files
+dist/
+
+# Ignore AWS credentials file (if you're using a file for credentials)
+.aws/credentials
+
+# Ignore local development environment files
+.env
+
+# Ignore any logs or temporary files
+*.log
+*.tmp
+
+# Ignore any build artifacts
+*.js.map
+*.js.LICENSE
